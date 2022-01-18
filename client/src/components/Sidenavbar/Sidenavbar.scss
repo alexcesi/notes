@@ -76,24 +76,38 @@
                 margin-top: 10px;
                 ul{
                     li{
-                        display: flex;
-                        align-items: center;
-                        padding:10px 18px;
-                        color: #ccc;
-                        text-decoration: none;
-                        .icon{
-                            font-size: 14px;
-                            margin-right: 8px;
+                        a{
+                            display: flex;
+                            align-items: center;
+                            padding:10px 18px;
+                            color: #ccc;
+                            text-decoration: none;
+                            .icon{
+                                font-size: 14px;
+                                margin-right: 8px;
+                            }
+                            &:hover{
+                                cursor: pointer;
+                                background: #404040
+                            }
+                            &.active{
+                                background: #404040;
+                            }
                         }
-                        &:hover{
-                            cursor: pointer;
-                            background: #404040
-                        }
-                        &.active{
-                            background: #404040;
-                        }
-
                     }
+                }
+            }
+        }
+        .sidenavbar-bottom{
+            padding: 8px 15px;
+            border-top: 1px solid #555;
+            .sidenavbar-bottom_need-help{
+                display: flex;
+                align-items: center;
+                padding: 8px;
+                .icon{
+                    font-size: 14px;
+                    margin-right: 8px;
                 }
             }
         }
